@@ -1,5 +1,5 @@
 msaconfig:
-  ipaddress: "192.168.10.1"
+  ipaddress: "192.168.10.4"
   dbtype: "oracle"
 ---
 
