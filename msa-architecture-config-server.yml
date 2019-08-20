@@ -1,0 +1,52 @@
+msaconfig:
+  greeting: "hello"
+  topic-name: "coffee-topic"
+  ipaddress: "192.168.10.1"
+  dbtype: "oracle"
+---
+
+spring:
+  profiles: local
+
+msaconfig:
+  greeting: "Hi, local server."
+  topic-name: "coffee-topic-local"
+  ipaddress: "192.168.10.2"
+  dbtype: "mysql"
+  
+---
+
+spring:
+  profiles: dev
+
+msaconfig:
+  greeting: "welcome to dev server"
+  topic-name: "coffee-topic-dev"
+  ipaddress: "192.168.10.3"
+  dbtype: "nosql"
+---
+
+spring:
+  profiles: test
+  
+msaconfig:
+  greeting: "welcome to test server"
+  topic-name: "coffee-topic-test"
+
+---
+
+spring:
+  profiles: staging
+  
+msaconfig:
+  greeting: "welcome to staging server"
+  topic-name: "coffee-topic-staging"
+
+---
+
+spring:
+  profiles: prod
+  
+msaconfig:
+  greeting: "welcome to prod server"
+  topic-name: "coffee-topic-prod"
